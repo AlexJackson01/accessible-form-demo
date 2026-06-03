@@ -1,0 +1,216 @@
+import { StyleSheet } from "react-native";
+
+export const styles = StyleSheet.create({
+    keyboardAvoid: {
+      flex: 1,
+    },
+    scrollContent: {
+      padding: 24,
+      paddingBottom: 48,
+    },
+    title: {
+      fontSize: 28,
+      fontWeight: '700',
+      color: '#0F172A',
+      marginBottom: 8,
+    },
+    subtitle: {
+      fontSize: 15,
+      color: '#64748B',
+      marginBottom: 32,
+      lineHeight: 22,
+    },
+    toggleRow: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      backgroundColor: '#F8FAFC',
+      borderRadius: 10,
+      padding: 14,
+      marginBottom: 32,
+      borderWidth: 1,
+      borderColor: '#E2E8F0',
+    },
+    toggleLabel: {
+      fontSize: 14,
+      color: '#475569',
+      flex: 1,
+      marginRight: 12,
+    },
+    fieldContainer: {
+      marginBottom: 20,
+    },
+    label: {
+      fontSize: 14,
+      fontWeight: '600',
+      color: '#1E293B',
+      marginBottom: 6,
+    },
+    required: {
+      color: '#EF4444',
+    },
+    input: {
+      borderWidth: 1.5,
+      borderColor: '#CBD5E1',
+      borderRadius: 10,
+      padding: 14,
+      fontSize: 15,
+      color: '#0F172A',
+      backgroundColor: '#FFFFFF',
+    },
+    textArea: {
+      height: 120,
+      textAlignVertical: 'top',
+    },
+    inputError: {
+      borderColor: '#EF4444',
+      backgroundColor: '#FFF5F5',
+    },
+    errorText: {
+      fontSize: 13,
+      color: '#EF4444',
+      marginTop: 6,
+      marginLeft: 2,
+    },
+    // Radio group
+    radioGroup: {
+      borderWidth: 1.5,
+      borderColor: '#CBD5E1',
+      borderRadius: 10,
+      backgroundColor: '#FFFFFF',
+      overflow: 'hidden',
+    },
+    radioGroupError: {
+      borderColor: '#EF4444',
+      backgroundColor: '#FFF5F5',
+    },
+    radioRow: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      padding: 14,
+      borderBottomWidth: 1,
+      borderBottomColor: '#F1F5F9',
+    },
+    radioOuter: {
+      width: 20,
+      height: 20,
+      borderRadius: 10,
+      borderWidth: 2,
+      borderColor: '#CBD5E1',
+      alignItems: 'center',
+      justifyContent: 'center',
+      marginRight: 12,
+    },
+    radioOuterSelected: {
+      borderColor: '#6366F1',
+    },
+    radioInner: {
+      width: 10,
+      height: 10,
+      borderRadius: 5,
+      backgroundColor: '#6366F1',
+    },
+    radioLabel: {
+      fontSize: 15,
+      color: '#0F172A',
+    },
+    // Checkbox
+    checkboxRow: {
+      flexDirection: 'row',
+      alignItems: 'center',
+    },
+    checkboxOuter: {
+      width: 22,
+      height: 22,
+      borderRadius: 5,
+      borderWidth: 2,
+      borderColor: '#CBD5E1',
+      alignItems: 'center',
+      justifyContent: 'center',
+      marginRight: 12,
+      backgroundColor: '#FFFFFF',
+    },
+    checkboxChecked: {
+      backgroundColor: '#6366F1',
+      borderColor: '#6366F1',
+    },
+    checkboxError: {
+      borderColor: '#EF4444',
+      backgroundColor: '#FFF5F5',
+    },
+    checkmark: {
+      color: '#FFFFFF',
+      fontSize: 13,
+      fontWeight: '700',
+    },
+    checkboxLabel: {
+      fontSize: 15,
+      color: '#0F172A',
+      flex: 1,
+      lineHeight: 22,
+    },
+    checkboxLabelError: {
+      color: '#EF4444',
+    },
+    submissionError: {
+      fontSize: 14,
+      color: '#EF4444',
+      backgroundColor: '#FFF5F5',
+      borderWidth: 1,
+      borderColor: '#FECACA',
+      borderRadius: 8,
+      padding: 12,
+      marginBottom: 16,
+      lineHeight: 20,
+    },
+    button: {
+      backgroundColor: '#6366F1',
+      borderRadius: 10,
+      padding: 16,
+      alignItems: 'center',
+      marginTop: 8,
+    },
+    buttonText: {
+      color: '#FFFFFF',
+      fontSize: 16,
+      fontWeight: '600',
+    },
+    successContainer: {
+      flex: 1,
+      alignItems: 'center',
+      justifyContent: 'center',
+      padding: 40,
+      backgroundColor: '#FFFFFF',
+    },
+    successIcon: {
+      fontSize: 56,
+      color: '#22C55E',
+      marginBottom: 24,
+    },
+    successTitle: {
+      fontSize: 28,
+      fontWeight: '700',
+      color: '#0F172A',
+      marginBottom: 12,
+      textAlign: 'center',
+    },
+    successSubtitle: {
+      fontSize: 15,
+      color: '#64748B',
+      textAlign: 'center',
+      lineHeight: 22,
+      marginBottom: 40,
+    },
+    backButton: {
+      backgroundColor: '#6366F1',
+      borderRadius: 10,
+      paddingVertical: 14,
+      paddingHorizontal: 32,
+      alignItems: 'center',
+    },
+    backButtonText: {
+      color: '#FFFFFF',
+      fontSize: 16,
+      fontWeight: '600',
+    },
+  });
