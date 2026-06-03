@@ -1,13 +1,7 @@
+import { forwardRef } from "react";
 import { Text, TouchableOpacity, View } from "react-native";
 import { styles } from "../styles/styles";
 import { strings } from "../constants/strings";
-
-// --- Checkbox ---
-// accessibilityRole="checkbox" tells screen readers this is a checkbox.
-// accessibilityState.checked reflects the ticked state.
-// The accessibilityLabel includes "checked" or "not checked" explicitly
-// because some screen readers on older Android versions do not reliably
-// announce state changes from accessibilityState alone.
 
 interface CheckboxProps {
   label: string;
@@ -16,8 +10,9 @@ interface CheckboxProps {
   error?: string;
 }
 
-export const Checkbox = ({ label, checked, onToggle, error }: CheckboxProps) => (
+export const Checkbox = forwardRef<View, CheckboxProps>(({ label, checked, onToggle, error }, ref) => (
   <TouchableOpacity
+    ref={ref}
     style={styles.checkboxRow}
     onPress={onToggle}
     accessibilityRole="checkbox"
@@ -47,4 +42,4 @@ export const Checkbox = ({ label, checked, onToggle, error }: CheckboxProps) => 
       {label}
     </Text>
   </TouchableOpacity>
-);
+));

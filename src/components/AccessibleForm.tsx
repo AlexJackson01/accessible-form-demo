@@ -104,6 +104,8 @@ export const AccessibleForm = () => {
           onChangeText={(text) => setField('message', text)}
           multiline
           numberOfLines={4}
+          returnKeyType="done"
+          onSubmitEditing={() => contactPreferenceRef.current?.focus()}
         />
 
         <RadioGroup

@@ -13,8 +13,9 @@ interface TermsCheckboxProps {
 export const TermsCheckbox = forwardRef<View, TermsCheckboxProps>(
   ({ checked, onToggle, error }, ref) => {
     return (
-      <View ref={ref} style={styles.fieldContainer}>
+      <View style={styles.fieldContainer}>
         <Checkbox
+          ref={ref}
           label={strings.fields.terms.label}
           checked={checked}
           onToggle={onToggle}

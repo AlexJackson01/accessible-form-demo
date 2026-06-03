@@ -1,14 +1,7 @@
+import { forwardRef } from "react";
 import { Text, TouchableOpacity, View } from "react-native";
 import { styles } from "../styles/styles";
 import { ContactPreference } from "./AccessibleForm";
-
-// --- Radio Button ---
-// A single radio option within a group.
-// accessibilityRole="radio" tells screen readers this is a radio button.
-// accessibilityState.checked reflects the selected state so screen readers
-// announce "selected" or "not selected" alongside the label.
-// The error message is passed in from the group and embedded in the
-// accessibilityLabel of the first option so it is read when focus arrives.
 
 interface RadioButtonProps {
   label: string;
@@ -19,14 +12,15 @@ interface RadioButtonProps {
   isFirst?: boolean;
 }
 
-export const RadioButton = ({
+export const RadioButton = forwardRef<View, RadioButtonProps>(({
   label,
   selected,
   onSelect,
   error,
   isFirst,
-}: RadioButtonProps) => (
+}, ref) => (
   <TouchableOpacity
+    ref={ref}
     style={styles.radioRow}
     onPress={onSelect}
     accessibilityRole="radio"
@@ -38,4 +32,4 @@ export const RadioButton = ({
     </View>
     <Text style={styles.radioLabel}>{label}</Text>
   </TouchableOpacity>
-);
+));

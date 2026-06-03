@@ -1,10 +1,11 @@
 import { useEffect, RefObject } from 'react';
-import { AccessibilityInfo, TextInput, View, Text } from 'react-native';
+import { AccessibilityInfo, TextInput, View, Text, findNodeHandle } from 'react-native';
 
 type FocusableRef = RefObject<TextInput | View | Text | null>;
 
 export const focusAccessibilityElement = (ref: FocusableRef) => {
-  const reactTag = (ref.current as any)?._nativeTag;
+  if (!ref.current) return;
+  const reactTag = findNodeHandle(ref.current);
   if (reactTag) {
     AccessibilityInfo.setAccessibilityFocus(reactTag);
   }

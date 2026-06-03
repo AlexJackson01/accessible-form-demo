@@ -30,6 +30,7 @@ export const RadioGroup = forwardRef<View, RadioGroupProps>(
         </Text>
         <View
           ref={ref}
+          accessible
           accessibilityRole="radiogroup"
           accessibilityLabel={
             error
