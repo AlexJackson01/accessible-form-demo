@@ -1,6 +1,6 @@
 # rn-accessible-form-demo
 
-A reference implementation of an accessible form in React Native. Built to accompany the blog post [Accessible Forms in React Native: A Complete Reference Guide](#) — fork it, run it on a real device and explore the patterns yourself.
+A reference implementation of an accessible form in React Native. Built to accompany the blog post [Accessible Forms in React Native: A Complete Reference Guide](https://alexjjackson.hashnode.dev/accessible-forms-react-native) — fork it, run it on a real device and explore the patterns yourself.
 
 ---
 
@@ -161,7 +161,7 @@ rn-accessible-form-demo/
 
 ## Related
 
-- 📖 [Blog post: Accessible Forms in React Native — A Complete Reference Guide](#)
+- 📖 [Blog post: Accessible Forms in React Native — A Complete Reference Guide](https://alexjjackson.hashnode.dev/accessible-forms-react-native)
 - 📚 [React Native Accessibility docs](https://reactnative.dev/docs/accessibility)
 
 ---
